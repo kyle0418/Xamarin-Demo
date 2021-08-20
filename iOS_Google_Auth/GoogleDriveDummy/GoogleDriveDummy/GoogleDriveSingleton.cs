@@ -72,44 +72,6 @@ namespace GoogleDriveDummy
                 string str = await response.GetResponseTextAsync();
 
                 Console.WriteLine("+++++++++++++" + str + "+++++++++++++++++++++++++");
-                //var token = new GoogleOAuthToken
-                //{
-                //    TokenType = e.Account.Properties["token_type"],
-                //    AccessToken = e.Account.Properties["access_token"]
-                //};
-
-
-                //            var initializer = new GoogleAuthorizationCodeFlow.Initializer
-                //            {
-                //                ClientSecrets = new Google.Apis.Auth.OAuth2.ClientSecrets()
-                //                {
-                //                    ClientId = GoogleConfig.clientId,
-                //                }
-                //            };
-                //            initializer.Scopes = new[] { GoogleConfig.scope
-                //};
-                //            initializer.DataStore = new FileDataStore("Google.Apis.Auth");
-                //            var flow = new GoogleAuthorizationCodeFlow(initializer);
-                //            var user = "DriveTest";
-                //            var token = new TokenResponse()
-                //            {
-                //                AccessToken = e.Account.Properties["access_token"],
-                //                ExpiresInSeconds = Convert.ToInt64(e.Account.Properties["expires_in"]),
-                //                RefreshToken = e.Account.Properties["refresh_token"],
-                //                Scope = e.Account.Properties["scope"],
-                //                TokenType = e.Account.Properties["token_type"]
-                //            };
-
-
-                //            UserCredential userCredential = new UserCredential(flow, user, token);
-                //            driveService = new DriveService(new BaseClientService.Initializer()
-                //            {
-                //                HttpClientInitializer = userCredential,
-                //                ApplicationName = "XamarinDriveTest",
-                //            });
-
-                //Application.Current.MainPage = new NavigationPage(new views.GoogleServicesPage());
-                //Application.Current.MainPage = new NavigationPage(new views.FileExplorer());
             }
         }
     }
